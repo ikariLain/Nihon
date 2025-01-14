@@ -1,0 +1,188 @@
+/* Default styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: url(Img/Japan-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    margin-top: 10px;
+    background-size: cover;
+    text-align: left;
+}
+
+header li{
+    display: inline;
+    padding: 0 3em;
+}
+
+nav li a{
+    color: #003366 !important;
+    font-size: 2rem;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    border-radius: 15%;
+}
+
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: 100vh; /* Make sure main content takes up at least full screen height */
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /* Stack elements vertically */
+    width: 100%;
+}
+
+.mp4-box{
+    width: 80%; /* You can adjust the width as needed */
+    height: auto;
+    max-width: 100%; /* Ensures the video stays responsive */
+    margin: 0 auto; /* Centers the div horizontally */
+    position: relative; /* For possible styling adjustments */
+}
+
+footer{
+    background-color: blueviolet;
+    height: 15vh;
+}
+
+/* Responsivitet för h1 */
+h1 {
+    font-size: 8rem; /* Fontstorlek */
+    color: #003366; /* Navy Blue */ 
+    font-weight: 100%;
+    margin-top: 30%;
+    text-align: center; /* Se till att texten centreras */
+}
+
+h3 {
+    color: pink !important;
+    font-size: 3rem;
+}
+
+/* Media queries för att hantera olika skärmstorlekar */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 6rem; /* Minska storleken på h1 på större mobiler */
+    }
+
+    nav li a {
+        font-size: 1.5rem; /* Minska fontstorleken på länkar */
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 4rem; /* Ännu mindre på mindre skärmar */
+        margin-top: 20%;
+    }
+
+    nav {
+        text-align: center; /* Centrerar navigationen för små skärmar */
+    }
+
+    nav li {
+        display: block; /* Gör navigationen vertikal */
+        padding: 0.5em;
+    }
+
+    nav li a {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem; /* Mindre på mobiler */
+        margin-top: 15%;
+    }
+
+    nav {
+        padding-left: 10px;
+    }
+
+    nav li {
+        display: block; /* Vertikal navigation */
+        padding: 0.8em;
+    }
+
+    nav li a {
+        font-size: 1rem;
+        padding: 0.5em;
+    }
+
+    main {
+        height: auto; /* Ta bort fast höjd */
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    footer {
+        height: auto; /* Justera footer höjd för små skärmar */
+    }
+
+    video {
+        max-width: 100%; /* Ensures the video will scale responsively */
+        height: auto;
+        margin: 0 auto; /* Horizontally center the video */
+    }
+    
+    
+}
+
+.haiku-box {
+    background-color: white;
+    padding: 30px; /* Increase padding for more space inside the box */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 80%; /* Increase width */
+    max-width: 900px; /* Maximum width of the box */
+    height: auto; /* Let the box height adjust automatically */
+    margin: 0 auto; /* Centers the box horizontally */
+    font-size: 1.5rem; /* Increase the font size for bigger text */
+}
+
+/* Optional: If you want the haiku text to be bigger as well */
+#haiku {
+    font-size: 1.8rem; /* Increase text size inside the haiku box */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+#generate-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-button:hover {
+    background-color: #005599;
+}
